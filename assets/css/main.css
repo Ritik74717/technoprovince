@@ -147,8 +147,8 @@ h6 {
   --heading-color: #ffffff;
   --contrast-color: #ffffff;
   color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 10px 0;
+  background-color: white;
+  padding: 0px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -158,8 +158,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 102px;
+  max-height: 50px;
   margin-right: 8px;
+
 }
 
 .header .logo h1 {
@@ -214,7 +215,7 @@ h6 {
 /* Index Page Header
 ------------------------------*/
 .index-page .header {
-  --background-color: rgba(0, 0, 0, 0);
+  --background-color: white;
 }
 
 /* Index Page Header on Scroll
@@ -246,7 +247,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: black;
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -336,7 +337,7 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: black;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -777,7 +778,7 @@ section,
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: var(--accent-color);
+  background-color: black;
   margin: 4px 10px;
 }
 
@@ -798,7 +799,7 @@ section,
   position: relative;
   padding: 120px 0 80px 0;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -1000,7 +1001,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
+  background-color:white;
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 80px 20px;
@@ -1041,6 +1042,7 @@ section,
 }
 
 .services .service-item:hover {
+  background-color: lightgrey;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
 }
@@ -1100,10 +1102,11 @@ section,
   margin: 10px;
   border: 2px solid var(--contrast-color);
   color: var(--contrast-color);
+  border-radius: 200px;
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--accent-color);
+  background: black;
   color: var(--background-color);
   border: 2px solid var(--accent-color);
 }
@@ -1707,4 +1710,8 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.p{
+  text-align: justify;
 }
